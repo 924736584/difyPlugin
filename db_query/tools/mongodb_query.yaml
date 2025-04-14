@@ -1,6 +1,6 @@
 identity:
   name: mongodb_query
-  author: 924736584
+  author: "924736584"
   label:
     en_US: MongoDB Query
     zh_Hans: MongoDB查询

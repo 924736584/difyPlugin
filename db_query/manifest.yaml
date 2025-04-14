@@ -1,12 +1,12 @@
-author: 924736584
+author: "924736584"
 created_at: "2025-01-13T09:55:01.5573645+08:00"
 description:
-  en_US: Database Query Utils.
-  zh_Hans: 数据库查询工具。
+  en_US: Tools Utils.
+  zh_Hans: 工具合集。
 icon: icon.svg
 label:
-  en_US: Database Query
-  zh_Hans: 数据库查询
+  en_US: Tools Utils
+  zh_Hans: 工具合集
 meta:
   arch:
     - amd64
