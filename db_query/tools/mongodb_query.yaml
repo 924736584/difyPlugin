@@ -1,0 +1,87 @@
+identity:
+  name: mongodb_query
+  author: songdeyuan
+  label:
+    en_US: MongoDB Query
+    zh_Hans: MongoDB查询
+description:
+  human:
+    en_US: A tool for MongoDB query execution.
+    zh_Hans: MongoDB查询执行工具。
+  llm: A tool for executing MongoDB queries. Input should be a search query.
+extra:
+  python:
+    source: tools/mongodb_query.py
+parameters:
+  - name: db_host
+    type: string
+    required: true
+    default: localhost
+    label:
+      en_US: Database Host
+      zh_Hans: 数据库地址
+    human_description:
+      en_US: MongoDB database hostname or IP address.
+      zh_Hans: MongoDB数据库的主机名或IP地址。
+    form: llm
+  - name: db_port
+    type: number
+    required: false
+    label:
+      en_US: Port
+      zh_Hans: 端口
+    human_description:
+      en_US: MongoDB database port.
+      zh_Hans: MongoDB数据库的端口。
+    form: llm
+  - name: db_username
+    type: string
+    required: false
+    label:
+      en_US: Username
+      zh_Hans: 用户名
+    human_description:
+      en_US: MongoDB database username.
+      zh_Hans: MongoDB数据库的用户名。
+    form: llm
+  - name: db_password
+    type: secret-input
+    required: false
+    label:
+      en_US: Password
+      zh_Hans: 密码
+    human_description:
+      en_US: MongoDB database password.
+      zh_Hans: MongoDB数据库的密码。
+    form: llm
+  - name: db_name
+    type: string
+    required: false
+    label:
+      en_US: Database Name
+      zh_Hans: 库名
+    human_description:
+      en_US: MongoDB database name.
+      zh_Hans: MongoDB数据库的名称。
+    form: llm
+  - name: collection_name
+    type: string
+    required: false
+    label:
+      en_US: Collection Name
+      zh_Hans: 集合名称
+    human_description:
+      en_US: MongoDB Collection name.
+      zh_Hans: MongoDB数据库集合名称。
+    form: llm
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: MongoDB Query
+      zh_Hans: MongoDB查询语句
+    human_description:
+      en_US: 'MongoDB query statement, for example: db.collection.find({field: value})'
+      zh_Hans: 'MongoDB查询语句，例如：db.collection.find({field: value})'
+    llm_description: 'MongoDB query statement, for example: db.collection.find({field: value})'
+    form: llm

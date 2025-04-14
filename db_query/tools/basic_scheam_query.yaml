@@ -1,0 +1,56 @@
+identity:
+  name: basic_scheam_query
+  author: songdeyuan
+  label:
+    en_US: Get basic information of available tables
+    zh_Hans: 获取可用表基本信息
+description:
+  human:
+    en_US: Tool for obtaining basic information of available tables.
+    zh_Hans: 获取可用表的基本信息的工具。
+  llm: Tool for obtaining basic information of available tables.
+extra:
+  python:
+    source: tools/basic_scheam_query.py
+parameters:
+  - name: db_host
+    type: string
+    required: true
+    default: localhost
+    label:
+      en_US: Database Host
+      zh_Hans: 数据库地址
+    human_description:
+      en_US: MongoDB database hostname or IP address.
+      zh_Hans: MongoDB数据库的主机名或IP地址。
+    form: llm
+  - name: db_port
+    type: number
+    required: false
+    label:
+      en_US: Port
+      zh_Hans: 端口
+    human_description:
+      en_US: MongoDB database port.
+      zh_Hans: MongoDB数据库的端口。
+    form: llm
+  - name: db_username
+    type: string
+    required: false
+    label:
+      en_US: Username
+      zh_Hans: 用户名
+    human_description:
+      en_US: MongoDB database username.
+      zh_Hans: MongoDB数据库的用户名。
+    form: llm
+  - name: db_password
+    type: secret-input
+    required: false
+    label:
+      en_US: Password
+      zh_Hans: 密码
+    human_description:
+      en_US: MongoDB database password.
+      zh_Hans: MongoDB数据库的密码。
+    form: llm

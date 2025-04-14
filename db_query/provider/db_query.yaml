@@ -1,0 +1,20 @@
+extra:
+  python:
+    source: provider/db_query.py
+identity:
+  name: db_query
+  author: songdeyuan
+  label:
+    en_US: Database Query
+    zh_Hans: AI工具合集
+  description:
+    en_US: Database Query Utils.
+    zh_Hans: AI工具合集
+  icon: icon.svg
+  tags:
+    - search
+    - utilities
+tools:
+  - tools/sql_query.yaml
+  - tools/mongodb_query.yaml
+  - tools/basic_scheam_query.yaml
