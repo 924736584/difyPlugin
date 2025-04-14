@@ -1,6 +1,6 @@
 identity:
   name: basic_scheam_query
-  author: "924736584"
+  author: s924736584
   label:
     en_US: Get basic information of available tables
     zh_Hans: 获取可用表基本信息

@@ -3,7 +3,7 @@ extra:
     source: provider/db_query.py
 identity:
   name: db_query
-  author: "924736584"
+  author: s924736584
   label:
     en_US: Database Query
     zh_Hans: AI工具合集
